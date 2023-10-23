@@ -1,0 +1,3 @@
+C:/INFO2001_cosolaptrinh/cmake-build-debug/CMakeFiles/INFO2001_cosolaptrinh.dir
+C:/INFO2001_cosolaptrinh/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/INFO2001_cosolaptrinh/cmake-build-debug/CMakeFiles/rebuild_cache.dir
