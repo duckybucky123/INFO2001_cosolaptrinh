@@ -4,4 +4,5 @@ project(INFO2001_cosolaptrinh C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(INFO2001_cosolaptrinh
-        HW01.c)
+        HW01.c
+        main.c)
