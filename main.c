@@ -1,35 +1,52 @@
 #include <stdio.h>
 
-#define GIA_TIEN_TRUOC_12H 6000
-#define GIA_TIEN_SAU_12H 7500
+struct ThoiGian {
+    int gio;
+    int phut;
+    int giay;
+};
 
 int main() {
-    int gioVaoCa, gioRaCa;
-    int tongGioLam, tienLuong;
+    struct ThoiGian tg1, tg2, khoangCach;
 
-    printf("Gio vao ca: ");
-    scanf("%d", &gioVaoCa);
 
-    printf("Gio ra ca: ");
-    scanf("%d", &gioRaCa);
+    printf("Nhap vao moc thoi gian thu nhat:\n");
+    printf("Gio: ");
+    scanf("%d", &tg1.gio);
+    printf("Phut: ");
+    scanf("%d", &tg1.phut);
+    printf("Giay: ");
+    scanf("%d", &tg1.giay);
 
-    // Xử lý tính số giờ làm
-    tongGioLam = gioRaCa - gioVaoCa;
 
-    // Xử lý tính tiền lương
-    if (gioVaoCa < 12 && gioRaCa <= 12) {
-        tienLuong = tongGioLam * GIA_TIEN_TRUOC_12H;
-    } else if (gioVaoCa < 12 && gioRaCa > 12) {
-        int gioLamTruoc12h = 12 - gioVaoCa;
-        int gioLamSau12h = gioRaCa - 12;
-        tienLuong = (gioLamTruoc12h * GIA_TIEN_TRUOC_12H) + (gioLamSau12h * GIA_TIEN_SAU_12H);
-    } else if (gioVaoCa >= 12 && gioRaCa > 12) {
-        tienLuong = tongGioLam * GIA_TIEN_SAU_12H;
-    } else {
-        tienLuong = 0;
+    printf("Nhap vao moc thoi gian thu hai:\n");
+    printf("Gio: ");
+    scanf("%d", &tg2.gio);
+    printf("Phut: ");
+    scanf("%d", &tg2.phut);
+    printf("Giay: ");
+    scanf("%d", &tg2.giay);
+
+
+    khoangCach.gio = tg2.gio - tg1.gio;
+    khoangCach.phut = tg2.phut - tg1.phut;
+    khoangCach.giay = tg2.giay - tg1.giay;
+
+
+    if (khoangCach.giay < 0) {
+        khoangCach.giay += 60;
+        khoangCach.phut--;
+    }
+    if (khoangCach.phut < 0) {
+        khoangCach.phut += 60;
+        khoangCach.gio--;
     }
 
-    printf("Tien luong ngay la: %d VND\n", tienLuong);
+
+    printf("\nKhoang cach giua hai diem:\n");
+    printf("Gio: %d\n", khoangCach.gio);
+    printf("Phut: %d\n", khoangCach.phut);
+    printf("Giay: %d\n", khoangCach.giay);
 
     return 0;
 }
