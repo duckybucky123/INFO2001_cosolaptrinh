@@ -12,4 +12,5 @@ add_executable(INFO2001_cosolaptrinh
         "HW struct 2.c"
         test.c
         test.c
+        test.c
         test.c)

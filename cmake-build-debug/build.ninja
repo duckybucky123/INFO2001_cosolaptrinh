@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/INFO2001_cosolaptrinh/cmake-build-debug/
 
 build cmake_object_order_depends_target_INFO2001_cosolaptrinh: phony || CMakeFiles/INFO2001_cosolaptrinh.dir
 
-build CMakeFiles/INFO2001_cosolaptrinh.dir/Hw01.c.obj: C_COMPILER__INFO2001_cosolaptrinh_unscanned_Debug C$:/INFO2001_cosolaptrinh/Hw01.c || cmake_object_order_depends_target_INFO2001_cosolaptrinh
-  DEP_FILE = CMakeFiles\INFO2001_cosolaptrinh.dir\Hw01.c.obj.d
+build CMakeFiles/INFO2001_cosolaptrinh.dir/HW01.c.obj: C_COMPILER__INFO2001_cosolaptrinh_unscanned_Debug C$:/INFO2001_cosolaptrinh/HW01.c || cmake_object_order_depends_target_INFO2001_cosolaptrinh
+  DEP_FILE = CMakeFiles\INFO2001_cosolaptrinh.dir\HW01.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
   OBJECT_FILE_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
@@ -73,6 +73,12 @@ build CMakeFiles/INFO2001_cosolaptrinh.dir/HW_struct_2.c.obj: C_COMPILER__INFO20
   OBJECT_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
   OBJECT_FILE_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
 
+build CMakeFiles/INFO2001_cosolaptrinh.dir/test.c.obj: C_COMPILER__INFO2001_cosolaptrinh_unscanned_Debug C$:/INFO2001_cosolaptrinh/test.c || cmake_object_order_depends_target_INFO2001_cosolaptrinh
+  DEP_FILE = CMakeFiles\INFO2001_cosolaptrinh.dir\test.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
+  OBJECT_FILE_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target INFO2001_cosolaptrinh
@@ -81,7 +87,7 @@ build CMakeFiles/INFO2001_cosolaptrinh.dir/HW_struct_2.c.obj: C_COMPILER__INFO20
 #############################################
 # Link the executable INFO2001_cosolaptrinh.exe
 
-build INFO2001_cosolaptrinh.exe: C_EXECUTABLE_LINKER__INFO2001_cosolaptrinh_Debug CMakeFiles/INFO2001_cosolaptrinh.dir/Hw01.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/main.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/hw_struct.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/HW_struct_2.c.obj
+build INFO2001_cosolaptrinh.exe: C_EXECUTABLE_LINKER__INFO2001_cosolaptrinh_Debug CMakeFiles/INFO2001_cosolaptrinh.dir/HW01.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/main.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/hw_struct.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/HW_struct_2.c.obj CMakeFiles/INFO2001_cosolaptrinh.dir/test.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\INFO2001_cosolaptrinh.dir
