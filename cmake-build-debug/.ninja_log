@@ -1,4 +1,5 @@
 # ninja log v5
-2	65	7227148624302663	CMakeFiles/INFO2001_cosolaptrinh.dir/HW01.c.obj	5f35812f067e86e9
-49	106	7227148718923027	INFO2001_cosolaptrinh.exe	ceeb643ac390c230
-2	49	7227148718375938	CMakeFiles/INFO2001_cosolaptrinh.dir/main.c.obj	9de2cd3fa6cc866f
+1	59	7227745808358038	CMakeFiles/INFO2001_cosolaptrinh.dir/HW01.c.obj	5f35812f067e86e9
+35	95	7227745859761211	INFO2001_cosolaptrinh.exe	e5a8f8e24eb3234d
+2	35	7227745859187215	CMakeFiles/INFO2001_cosolaptrinh.dir/main.c.obj	9de2cd3fa6cc866f
+6	42	7227745808194136	CMakeFiles/INFO2001_cosolaptrinh.dir/hw_struct.c.obj	a77b061e9ccc244a
