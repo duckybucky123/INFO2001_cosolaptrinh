@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 //#include <time.h>
 //
 //struct Student {
@@ -105,3 +105,10 @@
 //
 //    return 0;
 //}
+int main (){
+    int var = 10;
+    int *ptr = &var;
+    printf("%d", &var);
+    return 0;
+
+}

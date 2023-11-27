@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
 //
@@ -147,10 +147,10 @@
 //    for (int i = 0; i < count - 1; i++) {
 //        for (int j = i + 1; j < count; j++) {
 //            if (strcmp(students[i].name, students[j].name) > 0) {
-//                temp = students[i];
-//                students[i] = students[j];
-//                students[j] = temp;
-//            }
-//        }
-//    }
-//}
+/               temp = students[i];
+/               students[i] = students[j];
+/              students[j] = temp;
+            }
+        }
+    }
+}

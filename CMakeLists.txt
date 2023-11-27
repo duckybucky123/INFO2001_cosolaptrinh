@@ -9,4 +9,7 @@ add_executable(INFO2001_cosolaptrinh
         "hw struct.c"
         "HW struct 2.c"
         "HW struct 2.c"
-        "HW struct 2.c")
+        "HW struct 2.c"
+        test.c
+        test.c
+        test.c)
