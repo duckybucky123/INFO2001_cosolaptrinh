@@ -13,4 +13,8 @@ add_executable(INFO2001_cosolaptrinh
         test.c
         test.c
         test.c
-        test.c)
+        test.c
+        "array hw.c"
+        array.c
+        array.c
+        array.c)
